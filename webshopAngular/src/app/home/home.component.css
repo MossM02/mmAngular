@@ -3,10 +3,10 @@
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-areas: ". main1 main1"
+    /* grid-template-areas: ". main1 main1"
                          "main2 main2 main2"
                          "main3 main3 main4"
-                          "main3 main3 main4";
+                          "main3 main3 main4"; */
     grid-template-rows:200px 1fr 200px; /* beter % of px? */
     grid-template-columns: 25% 1fr 40%;
   }
