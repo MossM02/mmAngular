@@ -2,12 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body > * {
+    margin:0;
     padding: 1rem;
 }
 
@@ -20,3 +16,4 @@ body * ~ * {
 body {
     height:calc(100% - 52px- 42px);
 }
+
