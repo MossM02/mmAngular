@@ -1,0 +1,17 @@
+.main {
+    padding-bottom:0;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: ". main1 main1"
+                         "main2 main2 main2"
+                         "main3 main3 main4"
+                          "main3 main3 main4";
+    grid-template-rows:200px 1fr 200px; /* beter % of px? */
+    grid-template-columns: 25% 1fr 40%;
+  }
+
+  #main1 {
+    grid-area: main1;
+    background-color: lightgrey;
+  }

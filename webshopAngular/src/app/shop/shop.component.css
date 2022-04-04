@@ -1,0 +1,43 @@
+.main {
+    padding-bottom:0;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: ". main1 main1"
+                         "main2 main2 main2"
+                         "main3 main3 main4"
+                          "main3 main3 main4";
+    grid-template-rows:200px 1fr 200px; /* beter % of px? */
+    grid-template-columns: 25% 1fr 40%;
+  }
+
+  #main2 {
+    grid-area: main2;
+    background-color: #ffa08c;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  
+  #main2 * {
+    border: 1px solid black;
+    margin:1rem;
+    border-radius:5%;
+  }
+  
+  .p1 {
+    height: 100px;
+    width: 50%;
+  }
+  
+  .p2 {
+    height: 200px;
+    width: 80%;
+  }
+  .p3 {
+    height: 100px;
+    width: 50%;
+  }
+  .p4 {
+    height: 100px;
+    width: 50%;
+  }

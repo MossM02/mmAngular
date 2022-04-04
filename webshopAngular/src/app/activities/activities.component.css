@@ -1,0 +1,28 @@
+.main {
+    padding-bottom:0;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: ". main1 main1"
+                         "main2 main2 main2"
+                         "main3 main3 main4"
+                          "main3 main3 main4";
+    grid-template-rows:200px 1fr 200px; /* beter % of px? */
+    grid-template-columns: 25% 1fr 40%;
+  }
+
+  #main3 {
+    grid-area: main3;
+    background-color: #ffff64;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #main3 > section {
+    padding:0.5rem;
+      border: 1px solid black;
+      text-align:center;
+  }
